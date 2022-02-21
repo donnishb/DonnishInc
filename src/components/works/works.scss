@@ -1,11 +1,15 @@
 @import "../../global.scss";
 
 .works {
-  background-color: crimson;
+  background-color:cadetblue;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  @include mobile {
+    display: none;
+    visibility: hidden;
+  }
 
   .arrow {
     height: 50px;
@@ -14,6 +18,7 @@
 
     @include mobile {
       display: none;
+      visibility: hidden;
     }
 
     &.left {
@@ -34,9 +39,8 @@
     transition: all 1s ease-out;
 
     @include mobile {
-      height: 100vh;
-      flex-direction: column;
-      justify-content: center;
+      display: none;
+      visibility: hidden
     }
 
     .container {
@@ -55,9 +59,8 @@
         justify-content: center;
 
         @include mobile {
-          width: 80%;
-          height: 150px;
-          margin: 15px 0;
+          display: none;
+          visibility: hidden
         }
 
         .left {
@@ -78,21 +81,21 @@
               width: 40px;
               height: 40px;
               border-radius: 50%;
-              background-color: rgb(245, 179, 155);
+              background-color: #f5b39b;
               display: flex;
               align-items: center;
               justify-content: center;
 
               @include mobile {
-                width: 20px;
-                height: 20px;
+                display: none;
+                visibility: hidden
               }
 
               img {
                 width: 25px;
 
                 @include mobile {
-                  width: 15px;
+                  display: none;
                 }
               }
             }
@@ -100,7 +103,8 @@
               font-size: 25px;
              font-weight: 450;
               @include mobile{
-                font-size: 13px;
+                display: none;
+                visibility: hidden
               }
             }
             p {
@@ -109,6 +113,7 @@
               color:blue;
               @include mobile{
                 display: none;
+                visibility: hidden
               }
             }
             span {
