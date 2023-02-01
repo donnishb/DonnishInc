@@ -45,8 +45,9 @@ export const featuredPortfolio = [
     },
     {
       id: 2,
-      title: "Web Rampa UI Design",
-      img: "https://cdn.dribbble.com/users/3637068/screenshots/15467010/media/69a3279182b75365013fe285733d1122.png?compress=1&resize=1200x900",
+      title: "Web Dictionary",
+      img: "assets/dictionary.webp",
+      to:"https://donnishs-dictionary.netlify.app/"
     },
     {
       id: 3,
